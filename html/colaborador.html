@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <h1>Cadastro de colaborador</h1>
+        <h4>Digite a nome do equipamento a ser cadastrado e observações pertinentes a ele.</h4>
+    </div>
+
+    <form>
+        <div>
+            <input type="radio" id="coordenador" name="tipo_colaborador" value="coordenador">
+            <label for="coordenador">Coordenador</label>
+
+            <input type="radio" id="professor" name="tipo_colaborador" value="professor">
+            <label for="professor">Professor</label>
+
+            <input type="radio" id="administrador" name="tipo_colaborador" value="administrador">
+            <label for="administrador">Administrador</label>
+
+            <label for="nome-colaborador">Nome:</label>
+            <input type="text" id="nome-colaborador" name="nome-colaborador" placeholder="Insira o nome do colaborador."><br>
+
+            <input type="submit" value="Salvar">
+        </div>
+    </form>
+</body>
+</html>
