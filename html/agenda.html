@@ -1,10 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastro de Agenda</title>
+    </head>
+    <body>
+        <div>
+            <h1>Cadastro de Agenda</h1>
+            <h4>Insira as informações solicitadas sobre cada agenda que será cadastrada.</h4>
+        </div>
 
-</body>
+        <div>
+            <form>
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo"/><br><br>
+
+                <label for="inicio">Data de início: </label>
+                <input type="text" id="inicio" name="inicio"/><br><br>
+
+                <label for="termino">Data de término: </label>
+                <input type="text" id="termino" name="termino"/><br><br>
+
+                <label for="horaInicio">Hora do início:</label>
+                <input type="text" id="horaInicio" name="horaInicio"/><br><br>
+
+                <label for="horaTermino">Hora do término:</label>
+                <input type="text" id="horaTermino" name="horaTermino"/><br><br>
+
+                <label for="observacao">Observação: </label>
+                <input type="text" id="observacao" name="observacao"/><br><br>
+
+                <div class="colaboradores-dropdown">
+                    <label for="colaborador">Colaborador: </label>
+                        <select id="colaborador" class="colaborador-select">
+                            <option value="0">Escolha um colaborador</option>
+                        </select>
+                </div><br>
+
+                <div class="locais-dropdown">
+                    <label for="local">Local: </label>
+                        <select id="local" class="local-select">
+                            <option value="0" >Escolha um local</option>
+                        </select>
+                </div><br>
+
+                <div class="equipamentos-dropdown">
+                    <label for="equipamentos">Equipamentos que serão utilizados: </label>
+                        <select id="equipamentos" class="equipamento-select">
+                            <option value="0">Escolha um equipamento</option>
+                        </select>
+                </div><br>
+                <input type="submit" value="Salvar">
+            </form>
+        </div>
+    </body>
 </html>
