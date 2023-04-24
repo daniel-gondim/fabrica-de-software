@@ -1,7 +1,7 @@
-    function validarFormulario() {
+function validarFormulario() {
     // Obtém os valores dos campos do formulário
-    var descricao = document.getElementById('local-descricao').value;
-    var observacao = document.getElementById('local-observacao').value;
+    const descricao = document.getElementById('local-descricao').value;
+    const observacao = document.getElementById('local-observacao').value;
 
     // Verifica se algum dos campos está vazio
     if (descricao === '' || observacao === '') {
