@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="/js/equipamento.js"></script>
     <title>Cadastro de equipamentos</title>
 </head>
 <body>
@@ -11,7 +12,8 @@
       </div>
 
       <div>
-        <form>
+<!--        <form onsubmit="callApi()">-->
+      <form class="novo-form" action="@{/equipamentos/save" method="post">
           <label for="equipo-descricao">Descrição:</label>
           <input type="text" id="equipo-descricao" name="equipo-descricao" placeholder="Insira uma descrição."><br>
 
@@ -24,3 +26,12 @@
 
 </body>
 </html>
+
+<!--<form class="novo-form" action="/equipamentos/save" method="post">-->
+<!--    <table>-->
+<!--        <tr>-->
+<!--            <td><input type="submit" value="Salvar"></td>-->
+<!--        </tr>-->
+<!--        </tbody></table>-->
+
+<!--</form>-->
